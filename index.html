@@ -38,13 +38,13 @@
     .nav-contact:hover{color:var(--text)}
 
     /* ===== BENTO ===== */
-    .bento{display:flex;gap:18px;width:min(94vw,1100px);margin:0 auto;padding:22px 0 48px;align-items:flex-start}
-    .bento-col{flex:1;display:flex;flex-direction:column;gap:18px}
+    .bento{display:flex;gap:14px;width:min(92vw,920px);margin:0 auto;padding:18px 0 40px;align-items:flex-start}
+    .bento-col{flex:1;display:flex;flex-direction:column;gap:14px}
     @media(max-width:640px){.bento{flex-direction:column}.bento-col{width:100%}}
 
     /* ===== CARD ===== */
     .card{
-      background:var(--card);border:1px solid var(--card-border);border-radius:22px;overflow:hidden;
+      background:var(--card);border:1px solid var(--card-border);border-radius:18px;overflow:hidden;
       transition:transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94),box-shadow 0.35s ease,border-color 0.3s ease,background .4s,border .4s;
       box-shadow:0 1px 3px rgba(0,0,0,0.25),0 4px 12px rgba(0,0,0,0.12);
       position:relative;user-select:none;
@@ -206,7 +206,7 @@
   <div class="bento-col" id="colLeft">
 
     <!-- BIO -->
-    <div class="card" data-cat="about" style="padding:38px 40px">
+    <div class="card" data-cat="about" style="padding:30px 32px">
       <div class="memoji-wrap">
         <div class="memoji-container">
           <div class="memoji-inner" id="memojiInner">
@@ -244,7 +244,7 @@
     </div>
 
     <!-- SPOTIFY PLAYER -->
-    <div class="card spotify-card" data-cat="about" style="padding:18px 22px;position:relative">
+    <div class="card spotify-card" data-cat="about" style="padding:14px 16px;position:relative">
       <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 20% 40%,rgba(180,60,130,0.06),transparent 65%);pointer-events:none"></div>
       <p style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;display:flex;align-items:center;gap:5px;position:relative">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="#1db954"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
@@ -276,7 +276,7 @@
     </div>
 
     <!-- GYM SPLIT -->
-    <div class="card" data-cat="about" style="padding:24px 28px">
+    <div class="card" data-cat="about" style="padding:20px 22px">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-linecap="round"><path d="M6.5 6.5h-3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3"/><path d="M17.5 6.5h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-3"/><rect x="6.5" y="4" width="2" height="16" rx="1"/><rect x="15.5" y="4" width="2" height="16" rx="1"/><line x1="8.5" y1="12" x2="15.5" y2="12"/></svg>
         <h3 style="font-size:17px;font-weight:700">Gym Split</h3>
@@ -295,7 +295,7 @@
     <!-- REPOFRIEND -->
     <a href="https://github.com/shyam-kannan/codebase-documenter" target="_blank" class="card-link">
       <div class="card gradient-border" data-cat="projects" style="overflow:visible">
-        <div style="padding:0 0 20px;border-radius:18px;min-height:280px;display:flex;flex-direction:column;background:linear-gradient(180deg,#150e28,var(--card) 65%);overflow:hidden">
+        <div style="padding:0 0 20px;border-radius:18px;min-height:240px;display:flex;flex-direction:column;background:linear-gradient(180deg,#150e28,var(--card) 65%);overflow:hidden">
           <div style="flex:1;overflow:hidden;position:relative">
             <img src="https://raw.githubusercontent.com/shyam-kannan/codebase-documenter/main/demoImage.png" alt="RepoFriend demo" style="width:100%;height:100%;object-fit:cover;object-position:top;opacity:0.7">
             <div style="position:absolute;inset:0;background:linear-gradient(to top,var(--card) 0%,transparent 60%)"></div>
@@ -308,7 +308,7 @@
 
     <!-- LESSGO -->
     <a href="https://github.com/shyam-kannan/SJSU_Ridesharing" target="_blank" class="card-link">
-      <div class="card bg-lessgo" data-cat="projects" style="min-height:210px;display:flex;flex-direction:column;justify-content:flex-end;padding:24px 28px;position:relative;overflow:hidden">
+      <div class="card bg-lessgo" data-cat="projects" style="min-height:175px;display:flex;flex-direction:column;justify-content:flex-end;padding:18px 22px;position:relative;overflow:hidden">
         <div style="position:absolute;inset:0;opacity:0.06;background:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><circle cx=%2250%22 cy=%2280%22 r=%2240%22 fill=%22none%22 stroke=%2210b981%22 stroke-width=%221%22/><circle cx=%22140%22 cy=%2260%22 r=%2230%22 fill=%22none%22 stroke=%2210b981%22 stroke-width=%221%22/><circle cx=%2290%22 cy=%22150%22 r=%2235%22 fill=%22none%22 stroke=%2210b981%22 stroke-width=%221%22/><line x1=%2250%22 y1=%2280%22 x2=%22140%22 y2=%2260%22 stroke=%2210b981%22 stroke-width=%220.5%22/><line x1=%22140%22 y1=%2260%22 x2=%2290%22 y2=%22150%22 stroke=%2210b981%22 stroke-width=%220.5%22/><line x1=%2250%22 y1=%2280%22 x2=%2290%22 y2=%22150%22 stroke=%2210b981%22 stroke-width=%220.5%22/></svg>') center/cover;pointer-events:none"></div>
         <h3 style="font-size:17px;font-weight:700;margin-bottom:3px">LessGo</h3>
         <p style="color:rgba(255,255,255,0.4);font-size:13px;margin-bottom:6px">Microservices ridesharing — 10+ services on K8s</p>
@@ -319,7 +319,7 @@
 
     <!-- FINANCETRACKER -->
     <a href="https://github.com/shyam-kannan/finance_tracker" target="_blank" class="card-link">
-      <div class="card" data-cat="projects" style="min-height:210px;display:flex;flex-direction:column;justify-content:flex-end;padding:0;overflow:hidden;position:relative">
+      <div class="card" data-cat="projects" style="min-height:175px;display:flex;flex-direction:column;justify-content:flex-end;padding:0;overflow:hidden;position:relative">
         <img src="https://imgur.com/naryNNP.png" alt="FinanceTracker dashboard" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top left;opacity:0.5">
         <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.92) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.2) 100%)"></div>
         <div style="position:relative;padding:18px 22px">
@@ -362,7 +362,7 @@
 
     <!-- BIOMED HERO -->
     <a href="https://github.com/shyam-kannan/BioMed-LLM" target="_blank" class="card-link">
-      <div class="card hero-card" data-cat="projects" style="min-height:360px;display:flex;flex-direction:column;justify-content:flex-end;padding:0;position:relative;overflow:hidden">
+      <div class="card hero-card" data-cat="projects" style="min-height:310px;display:flex;flex-direction:column;justify-content:flex-end;padding:0;position:relative;overflow:hidden">
         <img src="https://raw.githubusercontent.com/shyam-kannan/BioMed-LLM/main/finalGUI.png" alt="BioMed-LLM GUI" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;opacity:0.45;mix-blend-mode:luminosity">
         <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(67,56,202,0.95) 0%,rgba(124,58,237,0.4) 50%,rgba(168,85,247,0.2) 100%)"></div>
         <div style="position:relative;padding:16px 22px 20px;margin-top:auto">
@@ -374,7 +374,7 @@
     </a>
 
     <!-- TECH STACK — PHYSICS SCATTER -->
-    <div class="card" data-cat="about" id="stackCard" style="padding:28px 30px;display:flex;flex-direction:column;min-height:480px;cursor:default">
+    <div class="card" data-cat="about" id="stackCard" style="padding:22px 24px;display:flex;flex-direction:column;min-height:440px;cursor:default">
       <div class="stack-zone" id="stackZone"></div>
       <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-top:auto;padding-top:6px">
         <div><h3 style="font-size:17px;font-weight:700;margin-bottom:2px">My stack</h3><p style="color:var(--muted);font-size:13px">ML &middot; Backend &middot; Cloud</p></div>
@@ -383,7 +383,7 @@
     </div>
 
     <!-- DARK MODE TOGGLE -->
-    <div class="card toggle-card" data-cat="about" id="toggleCard" style="padding:24px 30px;display:flex;align-items:center;justify-content:space-between">
+    <div class="card toggle-card" data-cat="about" id="toggleCard" style="padding:20px 24px;display:flex;align-items:center;justify-content:space-between">
       <div style="display:flex;align-items:center;gap:10px">
         <span id="modeIcon" style="font-size:20px">&#9789;</span>
         <span style="font-size:14px;color:var(--muted);font-weight:500" id="modeLabel">Dark mode</span>
@@ -392,7 +392,7 @@
     </div>
 
     <!-- PHOTOS SLIDESHOW -->
-    <div class="card" data-cat="about" style="padding:18px">
+    <div class="card" data-cat="about" style="padding:14px">
       <div class="slideshow" id="slideshow" style="margin-bottom:10px">
         <img class="slide active" src="https://placehold.co/600x375/1a3a2a/4ade80?text=Mountain" alt="Mountain">
         <img class="slide" src="https://placehold.co/600x375/1a2a3a/60a5fa?text=Ocean" alt="Ocean">
@@ -415,7 +415,7 @@
 
     <!-- C-COMPILER -->
     <a href="https://github.com/shyam-kannan/C-Compiler" target="_blank" class="card-link">
-      <div class="card bg-compiler" data-cat="projects" style="min-height:210px;display:flex;flex-direction:column;justify-content:flex-end;padding:24px 28px;position:relative;overflow:hidden">
+      <div class="card bg-compiler" data-cat="projects" style="min-height:175px;display:flex;flex-direction:column;justify-content:flex-end;padding:18px 22px;position:relative;overflow:hidden">
         <div style="position:absolute;top:12px;left:16px;right:16px;bottom:60px;font-family:'Courier New',monospace;font-size:10px;color:rgba(96,165,250,0.18);line-height:1.7;pointer-events:none;overflow:hidden">
           <span style="color:rgba(198,120,221,0.2)">#include</span> &lt;iostream&gt;<br>
           <span style="color:rgba(198,120,221,0.2)">#include</span> "lexer.h"<br><br>
