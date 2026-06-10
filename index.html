@@ -40,7 +40,47 @@
     /* ===== BENTO ===== */
     .bento{display:flex;gap:14px;width:min(92vw,920px);margin:0 auto;padding:18px 0 40px;align-items:flex-start}
     .bento-col{flex:1;display:flex;flex-direction:column;gap:14px}
-    @media(max-width:640px){.bento{flex-direction:column}.bento-col{width:100%}}
+    /* ===== RESPONSIVE — TABLET ===== */
+    @media(max-width:768px){
+      .nav-inner{height:56px;padding:0 20px}
+      .nav-brand{font-size:22px}
+      .nav-links{gap:22px}
+      .nav-link,.nav-contact{font-size:15px}
+    }
+
+    /* ===== RESPONSIVE — MOBILE ===== */
+    @media(max-width:640px){
+      .bento{flex-direction:column;padding:12px 0 30px;gap:12px}
+      .bento-col{width:100%}
+      .nav-inner{height:50px;padding:0 16px}
+      .nav-brand{font-size:20px}
+      .nav-links{position:static;transform:none;gap:14px}
+      .nav-link{font-size:13px}
+      .nav-link.active::after{bottom:-10px}
+      .nav-contact{font-size:13px}
+      .bio-card{padding:22px 20px !important}
+      .bio-title{font-size:36px !important;margin-bottom:12px !important}
+      .bio-desc{font-size:14px !important}
+      .bio-desc br{display:none}
+      .memoji-container{width:64px;height:64px}
+      .memoji-wrap{gap:10px;margin-bottom:16px}
+      .work-btn{font-size:10px;padding:5px 11px}
+      .slideshow{aspect-ratio:16/10}
+      .hero-card{min-height:240px !important}
+      .stack-zone{min-height:260px !important}
+      #stackCard{min-height:360px !important;padding:18px 18px !important}
+      .chat-body{padding:16px 16px !important;min-height:140px !important}
+      .chat-input-bar{padding:10px 14px !important}
+      .thanks-section{padding:20px 0}
+    }
+
+    /* ===== RESPONSIVE — SMALL PHONE ===== */
+    @media(max-width:390px){
+      .nav-inner{padding:0 12px}
+      .nav-links{gap:10px}
+      .nav-link,.nav-contact{font-size:12px}
+      .nav-brand{font-size:18px}
+    }
 
     /* ===== CARD ===== */
     .card{
@@ -206,7 +246,7 @@
   <div class="bento-col" id="colLeft">
 
     <!-- BIO -->
-    <div class="card" data-cat="about" style="padding:30px 32px">
+    <div class="card bio-card" data-cat="about" style="padding:30px 32px">
       <div class="memoji-wrap">
         <div class="memoji-container">
           <div class="memoji-inner" id="memojiInner">
@@ -226,8 +266,8 @@
           </div>
         </div>
       </div>
-      <h1 style="font-size:46px;font-weight:800;letter-spacing:-1.5px;margin-bottom:16px;line-height:1">Shyam</h1>
-      <p style="color:var(--muted);font-size:16px;line-height:1.75;margin-bottom:22px">
+      <h1 class="bio-title" style="font-size:46px;font-weight:800;letter-spacing:-1.5px;margin-bottom:16px;line-height:1">Shyam</h1>
+      <p class="bio-desc" style="color:var(--muted);font-size:16px;line-height:1.75;margin-bottom:22px">
         I'm an <span style="color:var(--text2);font-weight:600">ML engineer</span> based in Santa Clara,<br>
         CA. M.S. in AI from SJSU, building at<br>
         the intersection of AI and<br>
