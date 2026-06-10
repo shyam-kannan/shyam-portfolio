@@ -704,7 +704,7 @@ function gItem(el){while(el&&!el.parentElement?.classList?.contains('bento-col')
 function gCol(el){while(el&&!el.classList?.contains('bento-col'))el=el.parentElement;return el}
 
 document.addEventListener('pointerdown',e=>{
-  if(e.button!==0)return;const c=gCard(e.target);if(!c||e.target.closest('input,textarea,button,select'))return;
+  if(e.pointerType==='touch'||e.button!==0)return;const c=gCard(e.target);if(!c||e.target.closest('input,textarea,button,select'))return;
   const it=gItem(c),co=gCol(c);if(!it||!co)return;const r=it.getBoundingClientRect();
   ds={item:it,card:c,col:co,sx:e.clientX,sy:e.clientY,ox:e.clientX-r.left,oy:e.clientY-r.top,w:r.width,h:r.height,moved:false,ghost:null,ph:null};
 });
